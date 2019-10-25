@@ -131,11 +131,9 @@ body{
 
 
 
-.index{
+.masuk{
 
-  display:  block;  
-
-  margin-bottom:  20px;
+  display:  block;
 
   padding:  15px;
 
@@ -149,8 +147,6 @@ body{
 
   transform: translate(-50%,-50%);
 
-  margin-top: 300px;
-
   margin: 5% auto;
 
   height:  500px;
@@ -163,7 +159,7 @@ body{
 
 }
 
-.index h1{
+.masuk h1{
 
   margin-left: 30%;
 
@@ -214,30 +210,33 @@ body{
 
 .btn{
 
-  margin-left: 25%;
+  padding-left: 50%;
 
   width: 50%;
 
   border: none;
 
-  border-radius: 10px;
+  border-radius: 20px;
 
   background: #f7f294;
 
   font-size: 16pt;
 
+  padding: 5px;
+
   cursor: pointer;
 
-  margin-top: 10px;
+  margin-top: 20px;
 
   font-weight: bold;
 
-
 }
 
-.index p{
+.masuk p{
 
-  padding-left: 30px;
+  margin-top: 0px;
+
+  padding: 0px;
 
   float: right;
 
@@ -250,7 +249,7 @@ body{
   cursor: pointer;
 }
 
-.index h2{
+.masuk h2{
 
   margin-left: 10%;
 
@@ -266,18 +265,6 @@ body{
 
 }
 
-.index a{
-
-  margin-left: 18%;
-
-  text-align: center;
-
-  font-size: 18px;
-
-  color: black;
-
-  cursor: pointer;
-}
 
 .Regis{
 
@@ -352,28 +339,6 @@ body{
   width: 80%;
 
   float: left;
-
-}
-
-.btn{
-
-  margin-left: 25%;
-
-  width: 50%;
-
-  border: none;
-
-  border-radius: 10px;
-
-  background: #f7f294;
-
-  font-size: 16pt;
-
-  cursor: pointer;
-
-  margin-top: 10px;
-
-  font-weight: bold;
 
 }
 
@@ -454,27 +419,7 @@ body{
 
 }
 
-.btn{
 
-  margin-left: 10%;
-
-  width: 50%;
-
-  border: none;
-
-  border-radius: 10px;
-
-  background: #f7f294;
-
-  font-size: 16pt;
-
-  cursor: pointer;
-
-  margin-top: 10px;
-
-  font-weight: bold;
-
-}
 
 .tentang{
 
@@ -550,7 +495,7 @@ body{
 
   padding:  0px;
 
-  width: 1550px;
+  width: 1000px;
 
   position: absolute;
 
@@ -584,6 +529,10 @@ body{
 
 .artikel input{
 
+  padding: 0px;
+
+  margin: 0px auto;
+
   border-radius: 5px;
 
   width: 50%;
@@ -596,7 +545,7 @@ body{
 
 .container-img{
 
-  padding: 10px;
+  padding: 8px;
 
 }
 
@@ -615,7 +564,7 @@ body{
 
   font-size: 15px;
 
-  padding: 10px;
+  padding left: 10px;
 
 }
 
@@ -627,7 +576,7 @@ body{
 
   color: blue;
 
-  padding: 10px;
+  padding left: 10px;
 
   cursor: pointer;
 
@@ -639,8 +588,9 @@ body{
 
   cursor: pointer;
 
-  font-size: 35px;
+  font-size: 20px;
 
+  padding: 5px;
 
 }
 
@@ -650,7 +600,9 @@ body{
 
   padding:  0px;
 
-  width: 1550px;
+  width: 1000px;
+
+  height: 450px;
 
   position: absolute;
 
@@ -660,7 +612,7 @@ body{
 
   transform: translate(-50%,-50%);
 
-  margin-top: 300px;
+  margin-top: 500px;
 
   margin: 5% auto;
 
@@ -673,10 +625,22 @@ body{
 
 .bantuan h1{
 
-  font-size: 60px;
+  font-size: 50px;
+
+  text-align: center;
+
+}
+
+.bantuan h2{
+
+  font-size: 25px;
 
   text-align: left;
+
+  padding: 10px;
+
 }
+
 
 .jasaperawat {
 
@@ -686,7 +650,7 @@ body{
 
   padding:  15px;
 
-  width: 500px;
+  width: 1000px;
 
   position: absolute;
 
