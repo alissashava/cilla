@@ -4,57 +4,84 @@
 
 <head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+
+    <link rel="stylesheet" type="text/css" href="artikel.css">
 
 	<title>SAHABAT BUNDA</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 
 </head>
 
-<body class="body">
+<body>
 
-	<header>
-		<a href="index.html"><h1 class="logo">S a h a b a t B u n d a</h1></a>
-		<nav>
-			<ul class="navlink">
+	<div class="topnav" id="myTopnav">
 
-				<li><a href="jasaperawat.html">JASA PERAWAT</a></li>
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
 
-				<li><a href="artikel.html">ARTIKEL</a></li>
+		<a href="jasaperawat.html" class="active">JASA PERAWAT</a>
 
-				<li><a href="tentang.html">TENTANG</a></li>
+		<a href="artikel.html" class="active">ARTIKEL</a>
 
-				<li><a href="bantuan.html">BANTUAN</a></li>
+		<a href="tentang.html" class="active">TENTANG</a>
 
-				<li><a href="index.html">KELUAR</a></li>
+        <a href="bantuan.html" class="active">BANTUAN</a>
 
-			</ul>
-		</nav>
-	</header>
+        <a href="index.html" class="active">KELUAR</a>
 
-<div class="artikel">
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
-	<h3> ARTIKEL </h3>
+            <i class="fa fa-bars"></i>
 
-	<div class="container" align="center">
+        </a>
 
-		<input type="text" name="" value="" placeholder="Cari Artikel..."/>
+    </div>
 
-	</div>
+    <div class="content">
 
-	<div class="container-img" align="center">
+        <input type="text" name="" value="" placeholder="Cari Artikel..."/><br>
 
-		<img src="artikel.jpg">
+        <img src="artikel.jpg">
 
-	</div>
+        <p>
+            <b>Mari Cegah dan Ringankan Sembelit pada Ibu Hamil</b>
+            <br><br>
+            Sembelit pada ibu hamil adalah hal yang kerap terjadi.Peningkatan hormon progesteron yang terjadi pada ibu hamil bisa menjadi salah satu kemungkinan penyebabnya.
+            <br><br>
+        </p>
 
-	<h4><b>Mari Cegah dan Ringankan Sembelit pada Ibu Hamil</b></h4>
-   
-   	<h5>Sembelit pada ibu hamil adalah hal yang kerap terjadi.Peningkatan hormon progesteron yang terjadi pada ibu hamil bisa menjadi salah satu kemungkinan penyebabnya</h5>
+        <button id="request">Baca Selengkapnya</button>
 
-   	<h6>Baca Selengkapnya</h6><br>
+        <div id="bio"></div>
 
-</div>
+    </div>
+
+    <div class="footer">
+
+        <div class="socialmedia">
+
+            <h5>Informasi Lebih Lanjut: </h5>
+
+            <ul>
+
+                <li><img src="instagram.png" alt="instagram"></li>
+
+                <li><img src="facebook.png" alt="facebook"></li>
+
+                <li><img src="twitter.png" alt="twitter"></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="artikel.js"></script>
+
+</body>
+
+</html>
