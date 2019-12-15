@@ -4,90 +4,152 @@
 
 <head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+
+    <link rel="stylesheet" type="text/css" href="daftarbaru.css">
 
 	<title>SAHABAT BUNDA</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
-<body class="body">
+<body>
 
-	<header>
+	<div class="topnav" id="myTopnav">
 
-		<a href="index.html"><h1 class="logo">S a h a b a t B u n d a</h1></a>
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
 
-		<nav>
+		<a href="tentang.html" class="active">TENTANG</a>
 
-			<ul class="navlink">
+		<a href="masuk.html" class="active">MASUK</a>
 
-				<li><a href="bantuan.html">BANTUAN</a></li>
+		<a href="daftarbaru.html" class="active">DAFTAR</a>
+		
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
-			</ul>
+            <i class="fa fa-bars"></i>
 
-		</nav>
+        </a>
 
-	</header>
+    </div>
 
-<div class="Regis">
+    <div class="content">
 
-			<h1>Daftar Baru</h1>
+    	<form class="form" action="" method="POST" onsubmit="validasi();">
 
-			<div class="registrasiform">
+    		<label for="name">Nama Lengkap</label><br>
 
-				<input type="text" placeholder="Nama" name="" value="">
+    		<input type="text" id="name" class="form-group" placeholder="Nama lengkap"><br>
 
-			</div>
+    		<label for="nomor.telepon">Nomor Telepon</label><br>
 
-			<div class="registrasiform">
+    		<input type="number" id="nomor.telepon" class="form-group" placeholder="Nomor Telepon"><br>
 
-				<input type="number" placeholder="Nomor Telp." name="" value="">
+    		<label for="username">Username</label><br>
 
-			</div>
+    		<input type="text" id="username" class="form-group" placeholder="Username"><br>
 
-			<div class="registrasiform">
+    		<label for="password">Kata Sandi</label><br>
 
-				<input type="text" placeholder="Username" name="" value="">
+    		<input type="password" id="password" class="form-group" placeholder="Password"><br>
 
-			</div>
+    		<label for="password">Konfirmasi Sandi</label><br>
 
-			<div class="registrasiform">
+    		<input type="password" id="password" class="form-group" placeholder="Re-Password"><br>
 
-				<input type="password" placeholder="Password" name="" value="">
+    	</form>
 
-			</div>
+    	<a href="masuk.html"><button type="submit" onclick="document.getElementsByClassName('form')[0].submit(validasi())">
+    	DAFTAR</button></a>
 
-			<div class="registrasiform">
+    </div>
 
-				<input type="password" placeholder="Re-Password" name="" value="">
+    <div class="footer">
 
-			</div>
+    	<div class="socialmedia">
 
-			<p>
+    		<h5>Informasi Lebih Lanjut: </h5>
 
-            <label>Kondisi Bunda Saat Ini:</label>
+    		<ul>
 
-			<label><input type="radio" name="Hamil" value="Hamil" /> Hamil </label>
-            
-            <label><input type="radio" name="Melahirkan" value="Melahirkan" /> Melahirkan </label>
-        	
-        	</p>
+    			<li><img src="instagram.png" alt="instagram"></li>
 
-        	<div class="container" align="center">
+    			<li><img src="facebook.png" alt="facebook"></li>
 
-				<a href="masuk.html"><input class="btn" type="button" name="" value="Registrasi"></a>
+    			<li><img src="twitter.png" alt="twitter"></li>
 
-			</div>
+    		</ul>
 
-		</div>
+    	</div>
 
+    </div>
 
+    <script type="text/javascript">
+        // var validasi = (function (){
+        //     event.preventDefault();
+        //     alert('test');
+        // });
 
-	</body>
+        function myFunction() {
 
-</head>
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+
+                x.className += " responsive";
+
+            } else {
+
+                x.className = "topnav";
+
+            }
+
+        }
+
+        function validasi() {
+
+        var nama lengkap = document.getElementById("name").value;
+
+        var nomor telepon = document.getElementById("nomor.telepon").value;
+
+		var username = document.getElementById("username").value;
+
+		var password = document.getElementById("password").value;
+
+        console.log(username);
+
+		if (username == "" && password =="") {
+
+            alert("Data Kosong");
+
+			return false;
+
+		}else if(username !="" && password !=""){
+
+			alert("Yeayy Masuk");
+
+            window.location.href="index.html";
+
+		}
+
+        else{
+
+            alert("Data Kosong");
+
+            return false;
+
+        }
+
+	 }
+
+    </script>
+
+</body>
 
 </html>
+
+
+

@@ -4,80 +4,110 @@
 
 <head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+
+    <link rel="stylesheet" type="text/css" href="jasaperawat.css">
 
 	<title>SAHABAT BUNDA</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
-<body class="body">
+<body>
 
-	<header>
+	<div class="topnav" id="myTopnav">
 
-		<a href="index.html"><h1 class="logo">S a h a b a t B u n d a</h1></a>
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
 
-		<nav>
+		<a href="jasaperawat.html" class="active">JASA PERAWAT</a>
 
-			<ul class="navlink">
+		<a href="artikel.html" class="active">ARTIKEL</a>
 
-				<li><a href="jasaperawat.html">JASA PERAWAT</a></li>
+		<a href="tentang.html" class="active">TENTANG</a>
 
-				<li><a href="artikel.html">ARTIKEL</a></li>
+        <a href="bantuan.html" class="active">BANTUAN</a>
 
-				<li><a href="tentang.html">TENTANG</a></li>
+        <a href="index.html" class="active">KELUAR</a>
 
-				<li><a href="bantuan.html">BANTUAN</a></li>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
-				<li><a href="index.html">KELUAR</a></li>
+            <i class="fa fa-bars"></i>
 
+        </a>
 
-			</ul>
+    </div>
 
-		</nav>
+    <div class="content">
 
-	</header>
+        <form>
+            
+            <label for="name">Nama Lengkap</label><br>
 
-<div class="jasaperawat">
+            <input type="text" id="name" class="form-group" placeholder="Nama Lengkap"><br>
 
-	<h3> Jasa Perawat </h3>
+            <label for="nomor.telepon">Nomor Telepon</label><br>
 
-	<div class="perawatbox">
+            <input type="number" id="nomor.telepon" class="form-group" placeholder="Nomor Telepon"><br>
 
-		<input type="text" placeholder="Nama Lengkap" name="" value="">
+            <label for="address">Alamat</label><br>
 
-	</div>
+            <input type="text" id="address" class="form-group" placeholder="Alamat"><br>
 
-	<div class="perawatbox">
+            <label for="city">Kabupaten/Kota</label><br>
 
-		<input type="text" placeholder="Nomor Telepon" name="" value="">
+            <input type="text" id="city" class="form-group" placeholder="Kabupaten/Kota"><br>
 
-	</div>
+            <label for="province">Provinsi</label><br>
 
-	<div class="perawatbox">
+            <input type="text" id="province" class="form-group" placeholder="Provinsi"><br>
 
-		<input type="text" placeholder="Alamat" name="" value="">
+        </form>
 
-	</div>
+        <button type="btn-show" class="button" onclick="thisClicked()"> KIRIM</button>
 
-	<div class="perawatbox">
+    </div>
 
-		<input type="text" placeholder="Kabupaten/Kota" name="" value="">
+    <div class="footer">
 
-	</div>
+        <div class="socialmedia">
 
-	<div class="perawatbox">
+            <h5>Informasi Lebih Lanjut: </h5>
 
-		<input type="text" placeholder="Provinsi" name="" value="">
+            <ul>
 
-	</div>
+                <li><img src="instagram.png" alt="instagram"></li>
 
+                <li><img src="facebook.png" alt="facebook"></li>
 
-	<a href="jasaperawatlanjutan.html"><input class="btn" type="button" name="" value="KIRIM"></a>
+                <li><img src="twitter.png" alt="twitter"></li>
 
-</div>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="popUp1 " class="popUp">
+
+        <form class="popUp-content animate">
+
+            <p>
+                Permintaan Anda Telah Diproses.
+                <br><br>
+                Nomer Pelanggan : pirlicilaila00023456.
+                <br><br>
+                Silahkan Cek E-mail Secara Berkala.
+            </p>
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="jasaperawat.js"></script>
 
 </body>
+
+</html>

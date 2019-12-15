@@ -4,48 +4,114 @@
 
 <head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
 
-  <title>SAHABAT BUNDA</title>
+    <link rel="stylesheet" type="text/css" href="lupakatasandi.css">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>SAHABAT BUNDA</title>
 
-</head>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<body class="body">
+<body>
 
-  <header>
+	<div class="topnav" id="myTopnav">
 
-    <a href="index.html"><h1 class="logo">S a h a b a t B u n d a</h1></a>
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
 
-    <nav>
+		<a href="tentang.html" class="active">TENTANG</a>
 
-      <ul class="navlink">
+		<a href="masuk.html" class="active">MASUK</a>
 
-        <li><a href="bantuan.html">BANTUAN</a></li>
+		<a href="daftarbaru.html" class="active">DAFTAR</a>
+		
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
-      </ul>
+            <i class="fa fa-bars"></i>
 
-    </nav>
+        </a>
 
-  </header>
+    </div>
 
-<div class="Lupa">
+    <div class="content">
 
-      <h1>Lupa Kata Sandi</h1>
+    	<form class="form" action="" method="POST" onsubmit="validasi();">
 
-      <div class="lupapass">
+    		<label for="alamat">Alamat E-mail</label><br>
 
-        <input type="text" placeholder="Alamat E-mail" name="" value="">
+    		<input type="text" id="alamat" class="form-group" placeholder="Alamat E-mail">
 
-      </div>
+    	</form>
 
-      <a href="kodeverifikasi.html"><input class="btn" type="button" name="" value="Kirim Kode Verifikasi"></a>
+    	<button id="btn-show" class="button" onclick="thisClicked()">KONFIRMASI</button>
 
+    </div>
+
+    <div id="backdrop-modal" class="modal">
+
+        <div class="content-modal">
+
+            <div class="modal-header">
+
+                <span id="btn-close" class="display-topright">&times;</span>
+
+            </div>
+
+            <div class="modal-content">
+
+                <label for="code">Masukkan Kode Verifikasi:</label>
+
+                <input type="text" id="code" class="form-group" placeholder="Masukkan Kode Konfirmasi">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button onclick="thisClicked()" style="width:auto;" class="button">KIRIM</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+    	<div class="socialmedia">
+
+    		<h5>Informasi Lebih Lanjut : </h5>
+
+    		<ul>
+
+    			<li><img src="instagram.png" alt="instagram"></li>
+
+    			<li><img src="facebook.png" alt="facebook"></li>
+
+    			<li><img src="twitter.png" alt="twitter"></li>
+
+    		</ul>
+
+    	</div>
+
+    </div>
+
+<div id="popUp1" class="popUp">
+  <form class="popUp-content animate">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+  </form>
 </div>
+<script type="text/javascript" src="lupasandi.js"></script>
 
 </body>
 
 </html>
+

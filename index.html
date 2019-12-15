@@ -4,57 +4,117 @@
 
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" type="text/css" href="halaman1.css">
 
-	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
 
 	<title>SAHABAT BUNDA</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
 <body>
 
-	<header>
+	<div class="topnav" id="myTopnav">
 
-		<h1 class="logo">S a h a b a t B u n d a</h1>
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
 
-		<nav>
+		<a href="tentang.html" class="active">TENTANG</a>
 
-			<ul class="navlink">
+		<a href="masuk.html" class="active">MASUK</a>
 
-				<li><a href="tentang.html">TENTANG</a></li>
+		<a href="daftarbaru.html" class="active">DAFTAR</a>
 
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
-				<li><a href="masuk.html">MASUK</a></li>
+            <i cla   ss="fa fa-bars"></i>
 
-			</ul>
+        </a>
 
-		</nav>
+    </div>
 
-	</header>
+    <div class="content">
 
-	<div class="isi">
+    	<div class="isi">
 
-		<h1>Welcome to Our New Insane </h1><br><br>
+    		<h2> Welcome to Our New Insane!! </h2><br>
 
-		<h3>Kamilah sahabat yang paling mengerti Bunda.</h3>
+    		<p> Website untuk Ibu Indonesia <br> Sahabat Bunda siap menemani Bunda menjalani peran <br>
+    		 sebagai Bunda dengan nyaman dan mudah<br> Kamilah sahabat yang paling mengerti Bunda </p>
 
-	</div>
+    		<a href="daftarbaru.html"> GABUNG SEKARANG JUGA </a>
 
-	<div class="tombolcoba">
+    	</div>
 
-		<a href="daftarbaru.html"><h2>GABUNG SEKARANG JUGA</h2></a>
+    </div>
 
-	</div>
+    <div class="contentdua">
+
+    	<div class="isikiri">
+
+            <img src="artikel.png" alt="artikel">
+
+            <p><b>Artikel</b> <br> <br>
+                Dengan membaca artikel, Bunda dapat mengetahui informasi 
+    		  dan pengetahuan tentang kehamilan dan lain-lain<br><br> </p>
+
+            <img src="perawat.png" alt="perawat">
+
+            <p><b>Jasa Perawat</b> <br> <br>
+                Perawat sebagai teman Bunda, Jasa Perawat dapat diperoleh 
+    		  dengan mengisikan beberapa data diri Bunda</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+    	<h5>Informasi Lebih Lanjut: </h5>
+
+    	<ul>
+
+    		<li><img src="instagram.png" alt="instagram"></li>
+
+    		<li><img src="facebook.png" alt="facebook"></li>
+
+    		<li><img src="twitter.png" alt="twitter"></li>
+
+    	</ul>
+
+    </div>
+
+    <script>
+
+        function myFunction() {
+
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+
+                x.className += " responsive";
+
+            } else {
+
+                x.className = "topnav";
+
+            }
+
+        }
+
+    </script>
 
 </body>
 
 </html>
 
-</body>
 
-</html>
 
+
+
+
+
+	
