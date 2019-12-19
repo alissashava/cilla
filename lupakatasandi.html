@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+
+    <link rel="stylesheet" type="text/css" href="lupakatasandi.css">
+
+	<title>SAHABAT BUNDA</title>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="index.html" class="a"> S a h a b a t B u n d a </a>
+
+		<a href="tentang.html" class="active">TENTANG</a>
+
+		<a href="masuk.html" class="active">MASUK</a>
+
+		<a href="daftarbaru.html" class="active">DAFTAR</a>
+		
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+            <i class="fa fa-bars"></i>
+
+        </a>
+
+    </div>
+
+    <div class="content">
+
+    	<form class="form" action="" method="POST" onsubmit="validasi();">
+
+    		<label for="alamat">Alamat E-mail</label><br>
+
+    		<input type="text" id="alamat" class="form-group" placeholder="Alamat E-mail">
+
+    	</form>
+
+    	<button id="btn-show" class="button" onclick="thisClicked()">KONFIRMASI</button>
+
+    </div>
+
+    <div class="footer">
+
+    	<div class="socialmedia">
+
+    		<h5>Informasi Lebih Lanjut : </h5>
+
+    		<ul>
+
+    			<li><img src="instagram.png" alt="instagram"></li>
+
+    			<li><img src="facebook.png" alt="facebook"></li>
+
+    			<li><img src="twitter.png" alt="twitter"></li>
+
+    		</ul>
+
+    	</div>
+
+    </div>
+
+<div id="popUp1" class="popUp">
+
+  <form class="popUp-content animate">
+
+    <div class="container">
+
+      <label for="psw"><b>Kata Sandi Baru</b></label>
+
+      <input type="password" placeholder="Masukkan Kata Sandi Baru" name="psw" required>
+
+      <label for="psw"><b>Konfirmasi</b></label>
+
+      <input type="password" placeholder="Konfirmasi" name="psw" required>
+        
+      <button type="submit">KIRIM</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+<script type="text/javascript" src="lupasandi.js"></script>
+
+</body>
+
+</html>
+
